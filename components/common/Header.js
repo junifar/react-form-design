@@ -22,19 +22,17 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles(); 
   return (
-    <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar position="relative">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Ruang RW
+            Ruang  
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-    </div>
   );
 };
 
