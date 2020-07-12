@@ -1,6 +1,9 @@
 import React from 'react';
 
+import Avatar from '@material-ui/core/Avatar';
 import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
@@ -28,11 +31,31 @@ const Content = () => {
             <Typography variant="h4" gutterBottom>
               Contoh Layout
             </Typography>
+            
             <div className={classes.root}>
-              <Grid container spacing={4}>
+              <Grid container spacing={1}>
                 <Grid item xs={12}>
-                  <Paper className={classes.paper}>xs=12</Paper>
+                  <Card>
+                    <CardHeader
+                    avatar={
+                      <Avatar alt="Junifar Hidayat" />
+                    }
+                    title="Junifar Hidayat"
+                    subheader="panca motor, blok d 39">
+                    </CardHeader>
+                    <CardContent>
+                      <Typography>
+                        Contoh
+                      </Typography>
+                    </CardContent>
+                  </Card>
                 </Grid>
+                  <Grid item xs={6}>
+                    <Paper className={classes.paper}>xs=6</Paper>
+                  </Grid>
+                  <Grid item xs={6}>
+                    <Paper className={classes.paper}>xs=6</Paper>
+                  </Grid>
               </Grid>
             </div>
         </Container>
